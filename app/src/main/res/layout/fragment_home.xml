@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Gallery
+        android:id="@+id/simpleGallery"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_below="@+id/simpleGallery"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open restaurants"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"/>
+
+    <ListView
+        android:layout_below="@+id/title"
+        android:id="@+id/simpleListView"
+        android:layout_width="fill_parent"
+        android:layout_height="1100dp"
+        android:divider="@color/cardview_shadow_end_color"
+        android:dividerHeight="1dp" />
+
+</RelativeLayout>
+</ScrollView>

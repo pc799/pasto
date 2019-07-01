@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/order">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_light_background"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sam's Cafe"
+            android:textStyle="italic"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:text="DELIVERING TO YOUR DOOR IN 15 MIN"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subtitle"
+            android:text="1"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="80dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cheeseburger"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/subtitle"
+            android:layout_marginTop="80dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$9.99"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:layout_below="@+id/subtitle"
+            android:layout_marginTop="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content"
+            android:text="Extra bacon"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/subtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/note"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:text="Subtotal"
+            android:textSize="18sp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/note"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:text="$9.99"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/tax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subtotal"
+            android:layout_marginLeft="20dp"
+            android:text="Tax"
+            android:textSize="18sp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subtotal"
+            android:layout_marginRight="20dp"
+            android:text="$1.00"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/delivery_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tax"
+            android:layout_marginLeft="20dp"
+            android:text="Delivery fee"
+            android:textSize="18sp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tax"
+            android:layout_marginRight="20dp"
+            android:text="$2.00"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/delivery_fee"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Total"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/delivery_fee"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/colorPrimary"
+            android:text="$12.99"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_confirmation_number_black_24dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/promo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total"
+            android:text="Promo code"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total"
+            android:layout_marginRight="20dp"
+            android:text="****CED"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"/>
+
+    </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="PLACE ORDER"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true">
+
+    </Button>
+
+</RelativeLayout>
